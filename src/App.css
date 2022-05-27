@@ -21,6 +21,10 @@
   width: 100%;
 }
 
+.SidebarList #active {
+  background-color: #3d6272;
+}
+
 .SidebarList .row {
   width: 100%;
   height: 60px;

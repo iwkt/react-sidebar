@@ -10,12 +10,12 @@ export const SidebarData = [
     link: '/home',
   },
   {
-    title: 'ホーム',
+    title: 'メール',
     icon: <EmailIcon />,
     link: '/mail',
   },
   {
-    title: 'ホーム',
+    title: '分析',
     icon: <AssessmentIcon />,
     link: '/analitics',
   },
