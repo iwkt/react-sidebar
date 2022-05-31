@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import SidebarIcon from '../SidebarIcon';
-import { SidebarData } from '../SidebarData';
+import SidebarIcon from './SidebarIcon';
+import { SidebarData } from './SidebarData';
 
 export const Styled = () => {
   return (

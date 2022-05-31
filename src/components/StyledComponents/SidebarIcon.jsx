@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '../images/iwk3.png';
+import Icon from '../../../src/images/iwk3.png';
 
 function SidebarIcon() {
   return (
