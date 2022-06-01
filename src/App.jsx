@@ -1,10 +1,10 @@
 import './App.css';
-import { Styled } from './components/StyledComponents/StyledComponents';
+import { Sidebar } from './components/StyledComponents/Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <Styled />
+      <Sidebar />
     </div>
   );
 }

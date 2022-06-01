@@ -1,28 +1,28 @@
-VS Code で create-react-app を使用して eslint、prettier の設定をしたプロジェクト。VS Code と連携することでターミナルからコマンド入力をすることなしに eslint と prettier はの機能を使うことができる。
+styled-components を利用してサイドバーの製作
 
 # プロジェクト作成とパッケージの追加について
 
-create-react-app を使用してプロジェクト作成。この時点で eslint はインストールされているので
-下記パッケージをインストールした。
-prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-react
+create-react-app を使用してプロジェクト作成。
 
-## Error: "prettier/react" has been merged into "prettier" in eslint-config-prettier 8.0.0 　の回避
-
-このままだとエラーが発生するので
-~~extends に”plugin:pretteir/recommended”を追加した。~~
-~~参照元：https://dackdive.hateblo.jp/entry/2019/03/15/100000 ~~
-
-extends の”plugin:pretteir/recommended”を削除して、prettier とした。
+## styled-components の読み込み
 
 ```
- {
-   "extends": [
-   "eslint:recommended",
-   "plugin:react/recommended",
-   // "prettier/react",
-   "prettier"
-   ],
- }
+import styled from 'styled-components';
+```
+
+## アイコンには Material-UI を使用
+
+https://mui.com/
+
+```
+npm install @mui/material @emotion/react @emotion/styled
+```
+
+SVG icons を使えるようにする
+
+```
+npm install @mui/icons-material
+
 ```
 
 ## 整形されるファイル
