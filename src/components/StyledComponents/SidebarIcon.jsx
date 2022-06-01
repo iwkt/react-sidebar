@@ -5,7 +5,7 @@ function SidebarIcon() {
   return (
     <div className="SidebarIcon">
       <img src={Icon} />
-      <p>test@g-gmail.com</p>
+      <p>test@gg-gmail.com</p>
     </div>
   );
 }
