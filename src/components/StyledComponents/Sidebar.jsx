@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import SidebarIcon from './SidebarIcon';
+import { SidebarIcon } from './SidebarIcon';
 import { SidebarData } from './SidebarData';
 
 export const Sidebar = () => {
@@ -71,20 +71,5 @@ const Test = styled.div`
 
   .row #title {
     flex: 70%;
-  }
-
-  .SidebarIcon {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    text-align: center;
-    & img {
-      width: 100px;
-      height: 100px;
-    }
-    & p {
-      color: white;
-      font-weight: 600;
-      font-size: 13px;
-    }
   }
 `;

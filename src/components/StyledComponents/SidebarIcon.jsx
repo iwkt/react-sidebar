@@ -1,13 +1,31 @@
 import React from 'react';
+import style from 'styled-components';
 import Icon from '../../../src/images/iwk3.png';
 
-function SidebarIcon() {
+export const SidebarIcon = () => {
   return (
-    <div className="SidebarIcon">
-      <img src={Icon} />
-      <p>test@gg-gmail.com</p>
-    </div>
+    <IconStyle>
+      <div className="SidebarIcon">
+        <img src={Icon} />
+        <p>test@gg-gmail.com</p>
+      </div>
+    </IconStyle>
   );
-}
+};
 
-export default SidebarIcon;
+const IconStyle = style.div`
+  .SidebarIcon {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    & img {
+      width: 100px;
+      height: 100px;
+    }
+    & p {
+      color: white;
+      font-weight: 600;
+      font-size: 13px;
+    }
+  }
+`;
