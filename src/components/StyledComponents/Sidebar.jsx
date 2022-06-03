@@ -18,8 +18,8 @@ export const Sidebar = () => {
                 }}
                 id={window.location.pathname == value.link ? 'active' : ''}
               >
-                <div id="icon">{value.icon}</div>
-                <div id="title">{value.title}</div>
+                <div className="icon">{value.icon}</div>
+                <div className="title">{value.title}</div>
               </li>
             );
           })}
@@ -30,7 +30,7 @@ export const Sidebar = () => {
 };
 
 const Test = styled.div`
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -63,13 +63,13 @@ const Test = styled.div`
     }
   }
 
-  .row #icon {
+  .row .icon {
     flex: 30%;
     display: grid;
     place-items: center;
   }
 
-  .row #title {
+  .row .title {
     flex: 70%;
   }
 `;
