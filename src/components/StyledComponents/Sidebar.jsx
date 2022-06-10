@@ -12,11 +12,10 @@ export const Sidebar = () => {
             return (
               <li
                 key={key}
-                className="row"
+                className={`row ${window.location.pathname == value.link ? 'active' : ''}`}
                 onClick={() => {
                   window.location.pathname = value.link;
                 }}
-                id={window.location.pathname == value.link ? 'active' : ''}
               >
                 <div className="icon">{value.icon}</div>
                 <div className="title">{value.title}</div>
@@ -30,7 +29,7 @@ export const Sidebar = () => {
 };
 
 const Test = styled.div`
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,7 +45,7 @@ const Test = styled.div`
     height: auto;
     padding: 0;
     width: 100%;
-    & #active {
+    & .active {
       background-color: #3d6272;
     }
     & .row {
