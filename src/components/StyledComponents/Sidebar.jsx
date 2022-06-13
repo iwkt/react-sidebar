@@ -5,9 +5,9 @@ import { SidebarData } from './SidebarData';
 export const Sidebar = () => {
   return (
     <Test>
-      <div className="Sidebar">
+      <div className="sideBar">
         <SidebarIcon />
-        <ul className="SidebarList">
+        <ul className="sidebarList">
           {SidebarData.map((value, key) => {
             return (
               <li
@@ -28,6 +28,7 @@ export const Sidebar = () => {
   );
 };
 
+
 const Test = styled.div`
   * {
     margin: 0;
@@ -35,13 +36,13 @@ const Test = styled.div`
     box-sizing: border-box;
   }
 
-  .Sidebar {
+  .sideBar {
     height: 100%;
     width: 250px;
     background-color: #2d445d;
   }
 
-  .SidebarList {
+  .sidebarList {
     height: auto;
     padding: 0;
     width: 100%;
