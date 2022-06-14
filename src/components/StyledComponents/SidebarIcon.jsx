@@ -5,7 +5,7 @@ import Icon from '../../../src/images/iwk3.png';
 export const SidebarIcon = () => {
   return (
     <IconStyle>
-      <div className="SidebarIcon">
+      <div className="sidebarIcon">
         <img src={Icon} />
         <p>test@gg-gmail.com</p>
       </div>
@@ -14,7 +14,7 @@ export const SidebarIcon = () => {
 };
 
 const IconStyle = style.div`
-  .SidebarIcon {
+  .sidebarIcon {
     padding-top: 20px;
     padding-bottom: 15px;
     text-align: center;
