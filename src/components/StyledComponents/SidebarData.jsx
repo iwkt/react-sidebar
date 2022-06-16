@@ -8,15 +8,18 @@ export const SidebarData = [
     title: 'ホーム',
     icon: <HomeIcon />,
     link: '/home',
+    isActive: true,
   },
   {
     title: 'メール',
     icon: <EmailIcon />,
     link: '/mail',
+    isActive: true,
   },
   {
     title: '分析',
     icon: <AssessmentIcon />,
     link: '/analitics',
+    isActive: true,
   },
 ];
