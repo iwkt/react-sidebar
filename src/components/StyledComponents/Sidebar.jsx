@@ -1,17 +1,22 @@
 import styled from 'styled-components';
 import { SidebarIcon } from './SidebarIcon';
 import { SidebarData } from './SidebarData';
+import { useState } from 'react';
 
 export const Sidebar = () => {
+  const [active, setActive] = useState(true);
+  const toggle = (index) => {
+    setActive(!active);
+  };
   return (
     <Test>
       <div className="Sidebar">
         <SidebarIcon />
         <ul className="SidebarList">
-          {SidebarData.map((value, key) => {
+          {SidebarData.map((value, index) => {
             return (
               <li
-                key={key}
+                key={index}
                 className={`row ${window.location.pathname == value.link ? 'active' : ''}`}
                 onClick={() => {
                   window.location.pathname = value.link;
