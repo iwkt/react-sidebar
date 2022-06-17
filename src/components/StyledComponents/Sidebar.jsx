@@ -10,7 +10,7 @@ export const Sidebar = () => {
   };
   return (
     <Test>
-      <div className="Sidebar">
+      <div className="sideBar">
         <SidebarIcon />
         <ul className="SidebarList">
           {SidebarData.map((value, index) => {
@@ -40,13 +40,13 @@ const Test = styled.div`
     box-sizing: border-box;
   }
 
-  .Sidebar {
+  .sideBar {
     height: 100%;
     width: 250px;
     background-color: #2d445d;
   }
 
-  .SidebarList {
+  .sidebarList {
     height: auto;
     padding: 0;
     width: 100%;
